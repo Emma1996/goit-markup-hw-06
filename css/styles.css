@@ -729,6 +729,7 @@ a:active {
 }
 
 /*Form*/
+
 .form-title {
   font-weight: 700;
   font-size: 20px;
@@ -768,6 +769,12 @@ a:active {
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
 }
+.terms-text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 .form-group .input-with-icon {
   padding-left: 40px;
 }
@@ -784,15 +791,10 @@ a:active {
   fill: #2196f3;
 }
 .form-checkbox {
-  display: flex;
   flex-direction: row;
   gap: 8px;
   justify-content: center;
   padding-top: 10px;
-}
-.form-checkbox .checkmark {
-  appearance: none;
-  display: none;
 }
 
 .form-checkbox > *:nth-child(2) {
@@ -803,30 +805,7 @@ a:active {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-.form-checkbox .checkbox-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 7px;
-  fill: none;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-checkbox .checkmark:focus + .checkbox-icon,
-.form-checkbox .checkmark:checked:focus + .checkbox-icon {
-  outline: 2px solid #212121;
-}
 
-.form-checkbox .checkmark:checked + .checkbox-icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  fill: #ffffff;
-  outline: none;
-  stroke: #ffffff;
-  stroke-width: 0.2;
-}
 .textarea {
   resize: none;
 }
